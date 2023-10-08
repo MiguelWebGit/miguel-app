@@ -5,7 +5,6 @@ const About = () => {
     return (
         <div className="grid grid-cols-2 gap-8 items-center mb-64">
             <div className="flex justify-center">
-                {/* Asegúrate de tener una imagen llamada "about.jpg" en la carpeta "public" */}
                 <Image
                     className="rounded-lg"
                     src="/about.jpg"

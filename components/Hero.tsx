@@ -64,10 +64,9 @@ const Hero = () => {
                 </div>
             </div>
             <div className="relative bottom-8 rounded-full overflow-hidden">
-                {/* Asegúrate de tener una imagen llamada "profile.jpg" en la carpeta "public" */}
                 <Image
                     src="/profile.jpg"
-                    alt="Foto de perfil"
+                    alt="profile picture"
                     width={228}
                     height={228}
                 />

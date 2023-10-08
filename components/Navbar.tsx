@@ -7,11 +7,11 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({pathname}) => {
     return (
-        <header className="sticky top-0 z-50 flex justify-between p-4 bg-white border-b border-black-200 shadow-md">
+        <header className="sticky top-0 z-50 flex justify-between p-4 bg-white border-b border-black-200 shadow-md ">
             <div className="text-black font-bold ml-4">
                 <a href="/">Miguel.dev</a>
             </div>
-            <nav>
+            <nav className="mr-2">
                 <ul className="flex space-x-4">
                     {["Home", "About", "Projects", "Contact"].map((page) => (
                         <li key={page}>
