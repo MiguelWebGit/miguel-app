@@ -4,5 +4,4 @@ export interface Project {
     description: string;
     githubLink: string;
     liveDemoLink: string;
-  }
-  
+}
