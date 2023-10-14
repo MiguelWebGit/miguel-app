@@ -10,8 +10,13 @@ interface ProjectsProps {
 
 const Projects: React.FC<ProjectsProps> = ({projects}) => {
     return (
-        <div className="text-left">
-            <h1 className="text-4xl font-bold mb-8">Projects</h1>
+        <div className="text-center">
+            <h1 className="text-5xl text-blue-500 font-bold mb-10">Projects</h1>
+            <p className="mt-2 text-md text-gray-600 text-justify w-72 mb-16">
+                Each project is a testament to my technical skills and my
+                ability to build practical solutions that provide value to
+                users.
+            </p>
             {projects &&
                 projects.length > 0 &&
                 projects.map((project, index) => (
@@ -28,7 +33,7 @@ const Projects: React.FC<ProjectsProps> = ({projects}) => {
                             width={200}
                             height={200}
                         />
-                        <p className="text-base text-center mb-2">
+                        <p className="text-base text-center mb-2 w-80">
                             {project.description}
                         </p>
                         <div className="flex justify-center space-x-4">
