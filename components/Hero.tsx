@@ -13,7 +13,7 @@ import {SiTypescript, SiTailwindcss} from "react-icons/si";
 
 const Hero = () => {
     return (
-        <div className="flex justify-between items-center mb-64 mt-32">
+        <div className="flex justify-between items-center mb-60 mt-32">
             <div>
                 <h1 className="text-4xl font-bold">Software Developer</h1>
                 <p className="mt-2 mb-5 mr-28">
