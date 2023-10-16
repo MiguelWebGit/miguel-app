@@ -23,7 +23,7 @@ const ContactItem: React.FC<ContactItemProps> = ({
     size,
     link,
 }) => (
-    <div className="flex items-center space-x-2 mb-10 gap-2">
+    <div id="contact" className="flex items-center space-x-2 mb-10 gap-2">
         <Icon className="text-xl" color={color} size={size} />{" "}
         <div>
             <h2 className="font-bold">{title}</h2>

@@ -1,8 +1,8 @@
 import React from "react";
-import Image from "next/image"; // Import Image component from Next.js
-import {Project} from "./Project"; // Define your Project type in '../types'
-import {FaGithub} from "react-icons/fa"; // Import Github icon from FontAwesome
-import {IoIosOpen} from "react-icons/io"; // Import redirection icon from Ionicons
+import Image from "next/image";
+import {Project} from "./Project";
+import {FaGithub} from "react-icons/fa";
+import {IoIosOpen} from "react-icons/io";
 
 interface ProjectsProps {
     projects: Project[];
@@ -11,23 +11,18 @@ interface ProjectsProps {
 const Projects: React.FC<ProjectsProps> = ({projects}) => {
     return (
         <div id="projects" className="text-center mb-40">
-            <h1 className="text-5xl text-blue-500 font-bold mb-10">Projects</h1>
-            <p className="mt-2 text-md text-gray-600 text-justify w-72 mb-16">
-                Each project is a testament to my technical skills and my
-                ability to build practical solutions that provide value to
-                users.
-            </p>
+            <div className="mx-auto w-80">
+                <h1 className="text-5xl text-blue-500 font-bold mb-10">
+                    Projects
+                </h1>
+            </div>
             <div className="flex flex-wrap justify-center">
-                {" "}
-                {/* Añade flexbox al contenedor de los proyectos */}
                 {projects &&
                     projects.length > 0 &&
                     projects.map((project, index) => (
                         <div
                             key={index}
                             className="flex flex-col items-center mb-8 gap-8 w-1/2">
-                            {" "}
-                            {/* Ajusta el ancho de cada proyecto a la mitad del contenedor */}
                             <h2 className="text-2xl font-semibold mb-2">
                                 {project.title}
                             </h2>
