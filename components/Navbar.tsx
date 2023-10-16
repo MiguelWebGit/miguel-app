@@ -1,34 +1,36 @@
+"use client";
 import React from "react";
-import {useRouter} from "next/router";
 
-interface NavbarProps {
-    pathname: string;
-}
+const Navbar: React.FC = () => {
+    const navbarHeight = 150; // Ajusta este valor al alto de tu barra de navegación
 
-const Navbar: React.FC<NavbarProps> = ({pathname}) => {
+    const scrollToSection = (sectionId: string) => {
+        const sectionElement = document.getElementById(sectionId);
+
+        if (sectionElement) {
+            window.scrollTo({
+                top: sectionElement.offsetTop - navbarHeight,
+                behavior: "smooth",
+            });
+        }
+    };
+
     return (
-        <header className="sticky top-0 z-50 flex justify-between p-4 bg-white border-b border-black-200 shadow-md ">
-            <div className="text-black font-bold ml-4">
-                <a href="/">Miguel.dev</a>
+        <nav className="sticky top-0 z-50 flex justify-between p-4 bg-white border-b border-black-200 shadow-md">
+            <div>
+                <a
+                    onClick={() => scrollToSection("home")}
+                    className="cursor-pointer font-semibold">
+                    Miguel.dev
+                </a>
             </div>
-            <nav className="mr-2">
-                <ul className="flex space-x-4">
-                    {["Home", "About", "Projects", "Contact"].map((page) => (
-                        <li key={page}>
-                            <a
-                                href={`/${page.toLowerCase()}`}
-                                className={
-                                    pathname === `/${page.toLowerCase()}`
-                                        ? "text-green-300"
-                                        : "text-black font-semibold"
-                                }>
-                                {page}
-                            </a>
-                        </li>
-                    ))}
-                </ul>
-            </nav>
-        </header>
+            <div className="flex space-x-4 font-semibold cursor-pointer">
+                <a onClick={() => scrollToSection("home")}>Home</a>
+                <a onClick={() => scrollToSection("about")}>About</a>
+                <a onClick={() => scrollToSection("projects")}>Projects</a>
+                <a onClick={() => scrollToSection("contact")}>Contact</a>
+            </div>
+        </nav>
     );
 };
 

@@ -8,7 +8,7 @@ import Contact from "@/components/Contact";
 export default function Home() {
     return (
         <div>
-            <Navbar pathname={""} />
+            <Navbar />
             <div className="flex flex-col items-center justify-center min-h-screen mx-auto max-w-[50rem]">
                 <Hero />
                 <About />
