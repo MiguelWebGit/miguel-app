@@ -9,7 +9,7 @@ import {
 type ContactItemProps = {
     Icon: IconType;
     title: string;
-    text: string;
+    text: string | JSX.Element;
     color: string; // Añade una prop para el color
     size: number; // Añade una prop para el tamaño
     link?: string; // Añade una prop para el link
@@ -41,7 +41,7 @@ const ContactItem: React.FC<ContactItemProps> = ({
 const Contact: React.FC = () => (
     <div>
         <h1 className="text-2xl font-bold mb-6 text-blue-500">Contact</h1>
-        <div className="flex space-x-20">
+        <div className="flex space-x-20 h-full items-start">
             <ContactItem
                 Icon={FaMapMarkerAlt}
                 title="Location"
@@ -52,7 +52,13 @@ const Contact: React.FC = () => (
             <ContactItem
                 Icon={FaEnvelope}
                 title="Mail"
-                text="miguel.dev.cloud@gmail.com"
+                text={
+                    <>
+                        miguel.une@hotmail.com
+                        <br />
+                        miguel.dev.cloud@gmail.com
+                    </>
+                }
                 color="blue"
                 size={24}
             />
