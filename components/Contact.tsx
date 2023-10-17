@@ -11,9 +11,9 @@ type ContactItemProps = {
     Icon: IconType;
     title: string;
     text: string | JSX.Element;
-    color: string; // Añade una prop para el color
-    size: number; // Añade una prop para el tamaño
-    link?: string; // Añade una prop para el link
+    color: string;
+    size: number;
+    link?: string;
 };
 
 const ContactItem: React.FC<ContactItemProps> = ({

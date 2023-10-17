@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
 import {SunIcon, MoonIcon} from "@heroicons/react/solid";
-import useDarkMode from "./Darkmode"; // Note the change here
+import useDarkMode from "./Darkmode";
 
 const Navbar: React.FC = () => {
-    const navbarHeight = 150; // Ajusta este valor al alto de tu barra de navegación
+    const navbarHeight = 150;
 
     const scrollToSection = (sectionId: string) => {
         const sectionElement = document.getElementById(sectionId);
