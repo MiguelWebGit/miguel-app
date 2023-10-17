@@ -10,6 +10,7 @@ import {
     FaReact,
 } from "react-icons/fa";
 import {SiTypescript, SiTailwindcss} from "react-icons/si";
+import darkMode from "./Darkmode";
 
 const Hero = () => {
     return (
@@ -27,7 +28,10 @@ const Hero = () => {
                         href="https://www.linkedin.com/in/miguel-guerrero-52987615a/"
                         target="_blank"
                         rel="noopener noreferrer">
-                        <FaLinkedin size={24} color="blue" />
+                        <FaLinkedin
+                            size={24}
+                            color={darkMode() ? "white" : "blue"}
+                        />
                     </a>
                     <a
                         href="https://github.com/MiguelWebGit/"

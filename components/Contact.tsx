@@ -5,6 +5,7 @@ import {
     FaWhatsapp,
     FaLinkedin,
 } from "react-icons/fa";
+import darkMode from "./Darkmode";
 
 type ContactItemProps = {
     Icon: IconType;
@@ -59,7 +60,7 @@ const Contact: React.FC = () => (
                         miguel.dev.cloud@gmail.com
                     </>
                 }
-                color="blue"
+                color={darkMode() ? "white" : "blue"}
                 size={24}
             />
             <ContactItem
@@ -73,7 +74,7 @@ const Contact: React.FC = () => (
                 Icon={FaLinkedin}
                 title="LinkedIn"
                 text="Miguel Guerrero"
-                color="blue"
+                color={darkMode() ? "white" : "blue"}
                 size={24}
                 link="https://www.linkedin.com/in/miguel-guerrero-52987615a/"
             />
