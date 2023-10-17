@@ -28,10 +28,7 @@ const Hero = () => {
                         href="https://www.linkedin.com/in/miguel-guerrero-52987615a/"
                         target="_blank"
                         rel="noopener noreferrer">
-                        <FaLinkedin
-                            size={24}
-                            color={darkMode() ? "white" : "blue"}
-                        />
+                        <FaLinkedin size={24} color={"blue"} />
                     </a>
                     <a
                         href="https://github.com/MiguelWebGit/"

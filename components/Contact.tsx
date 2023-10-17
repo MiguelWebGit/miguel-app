@@ -60,7 +60,7 @@ const Contact: React.FC = () => (
                         miguel.dev.cloud@gmail.com
                     </>
                 }
-                color={darkMode() ? "white" : "blue"}
+                color={"blue"}
                 size={24}
             />
             <ContactItem
@@ -74,7 +74,7 @@ const Contact: React.FC = () => (
                 Icon={FaLinkedin}
                 title="LinkedIn"
                 text="Miguel Guerrero"
-                color={darkMode() ? "white" : "blue"}
+                color={"blue"}
                 size={24}
                 link="https://www.linkedin.com/in/miguel-guerrero-52987615a/"
             />
