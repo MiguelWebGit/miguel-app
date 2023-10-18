@@ -10,7 +10,6 @@ import {
     FaReact,
 } from "react-icons/fa";
 import {SiTypescript, SiTailwindcss} from "react-icons/si";
-import darkMode from "./Darkmode";
 
 const Hero = () => {
     return (

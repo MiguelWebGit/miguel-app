@@ -12,7 +12,10 @@ const Navbar: React.FC = () => {
 
         if (sectionElement) {
             window.scrollTo({
-                top: sectionElement.offsetTop - navbarHeight,
+                top:
+                    sectionElement.getBoundingClientRect().top +
+                    window.scrollY -
+                    navbarHeight,
                 behavior: "smooth",
             });
         }
