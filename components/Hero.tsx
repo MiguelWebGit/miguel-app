@@ -16,13 +16,15 @@ const Hero = () => {
         <div
             id="home"
             className="flex flex-col md:flex-row justify-between items-center mb-28 mt-32 p-6">
-            <div className="text-left">
-                <h1 className="text-4xl font-bold">Software Developer</h1>
+            <div className="text-center md:text-left">
+                <h1 className="text-3xl md:text-4xl font-bold">
+                    Software Developer
+                </h1>
                 <p className="mt-2 mb-5">
                     Hi I'm Miguel Guerrero. A passionate Software <br />
                     Developer based in Caracas, Venezuela.
                 </p>
-                <div className="flex justify-start space-x-2 mb-10">
+                <div className="flex justify-center md:justify-start space-x-2 mb-10">
                     <a
                         href="https://www.linkedin.com/in/miguel-guerrero-52987615a/"
                         target="_blank"
