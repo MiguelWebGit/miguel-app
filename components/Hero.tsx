@@ -20,9 +20,9 @@ const Hero = () => {
                 <h1 className="text-3xl md:text-4xl font-bold">
                     Software Developer
                 </h1>
-                <p className="mt-2 mb-5">
-                    Hi I'm Miguel Guerrero. A passionate Software <br />
-                    Developer based in Caracas, Venezuela.
+                <p className="mt-2 mb-5 w-10/12">
+                    Hi I'm Miguel Guerrero. A passionate Software Developer
+                    based in Caracas, Venezuela.
                 </p>
                 <div className="flex justify-center md:justify-start space-x-2 mb-10">
                     <a
