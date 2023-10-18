@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
     const {darkMode, toggleDarkMode} = useDarkMode();
 
     return (
-        <nav className="sticky top-0 z-50 flex justify-between p-4 bg-white border-b border-black-200 shadow-md h-14 dark:bg-gray-800">
+        <nav className="sticky top-0 z-50 flex justify-between p-4 bg-white border-b border-black-200 shadow-md h-14 dark:bg-gray-800 ">
             <div>
                 <a
                     onClick={() => scrollToSection("home")}
@@ -30,11 +30,39 @@ const Navbar: React.FC = () => {
                     Miguel.dev
                 </a>
             </div>
-            <div className="hidden md:flex space-x-4 font-semibold cursor-pointer">
-                <a onClick={() => scrollToSection("home")}>Home</a>
-                <a onClick={() => scrollToSection("about")}>About</a>
-                <a onClick={() => scrollToSection("projects")}>Projects</a>
-                <a onClick={() => scrollToSection("contact")}>Contact</a>
+            <div className="hidden md:flex justify-between space-x-4">
+                <div className="relative group">
+                    <a
+                        onClick={() => scrollToSection("home")}
+                        className="cursor-pointer hover:text-blue-500 transition-all duration-200 ease-in-out pb-1">
+                        Home
+                    </a>
+                    <span className="absolute inset-x-0 bottom-0 h-0.5 bg-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200 ease-in-out"></span>
+                </div>
+                <div className="relative group">
+                    <a
+                        onClick={() => scrollToSection("about")}
+                        className="cursor-pointer hover:text-blue-500 transition-all duration-200 ease-in-out pb-1">
+                        About
+                    </a>
+                    <span className="absolute inset-x-0 bottom-0 h-0.5 bg-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200 ease-in-out"></span>
+                </div>
+                <div className="relative group">
+                    <a
+                        onClick={() => scrollToSection("projects")}
+                        className="cursor-pointer hover:text-blue-500 transition-all duration-200 ease-in-out pb-1">
+                        Projects
+                    </a>
+                    <span className="absolute inset-x-0 bottom-0 h-0.5 bg-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200 ease-in-out"></span>
+                </div>
+                <div className="relative group">
+                    <a
+                        onClick={() => scrollToSection("contact")}
+                        className="cursor-pointer hover:text-blue-500 transition-all duration-200 ease-in-out pb-1">
+                        Contact
+                    </a>
+                    <span className="absolute inset-x-0 bottom-0 h-0.5 bg-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200 ease-in-out"></span>
+                </div>
             </div>
             <div className="mr-10">
                 <button onClick={toggleDarkMode} className="focus:outline-none">
@@ -61,11 +89,39 @@ const Navbar: React.FC = () => {
                         <XIcon className="h-6 w-6 text-gray-500 " />
                     </button>
                 </div>
-                <div className="flex flex-col items-center space-y-4 mt-10 font-semibold cursor-pointer">
-                    <a onClick={() => scrollToSection("home")}>Home</a>
-                    <a onClick={() => scrollToSection("about")}>About</a>
-                    <a onClick={() => scrollToSection("projects")}>Projects</a>
-                    <a onClick={() => scrollToSection("contact")}>Contact</a>
+                <div className="flex flex-col items-center space-y-4 mt-10 font-semibold cursor-pointer ">
+                    <div className="relative group">
+                        <a
+                            onClick={() => scrollToSection("home")}
+                            className="cursor-pointer hover:text-blue-500 transition-all duration-200 ease-in-out pb-1">
+                            Home
+                        </a>
+                        <span className="absolute inset-x-0 bottom-0 h-0.5 bg-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200 ease-in-out"></span>
+                    </div>
+                    <div className="relative group">
+                        <a
+                            onClick={() => scrollToSection("about")}
+                            className="cursor-pointer hover:text-blue-500 transition-all duration-200 ease-in-out pb-1">
+                            About
+                        </a>
+                        <span className="absolute inset-x-0 bottom-0 h-0.5 bg-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200 ease-in-out"></span>
+                    </div>
+                    <div className="relative group">
+                        <a
+                            onClick={() => scrollToSection("projects")}
+                            className="cursor-pointer hover:text-blue-500 transition-all duration-200 ease-in-out pb-1">
+                            Projects
+                        </a>
+                        <span className="absolute inset-x-0 bottom-0 h-0.5 bg-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200 ease-in-out"></span>
+                    </div>
+                    <div className="relative group">
+                        <a
+                            onClick={() => scrollToSection("contact")}
+                            className="cursor-pointer hover:text-blue-500 transition-all duration-200 ease-in-out pb-1">
+                            Contact
+                        </a>
+                        <span className="absolute inset-x-0 bottom-0 h-0.5 bg-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200 ease-in-out"></span>
+                    </div>
                 </div>
             </div>
         </nav>
