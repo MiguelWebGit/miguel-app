@@ -20,7 +20,7 @@ const Hero = () => {
                 <h1 className="text-3xl md:text-4xl font-bold">
                     Software Developer
                 </h1>
-                <p className="mt-2 mb-5 w-10/12">
+                <p className="mt-2 mb-5 md:w-10/12">
                     Hi I'm Miguel Guerrero. A passionate Software Developer
                     based in Caracas, Venezuela.
                 </p>
