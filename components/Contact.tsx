@@ -24,7 +24,9 @@ const ContactItem: React.FC<ContactItemProps> = ({
     size,
     link,
 }) => (
-    <div id="contact" className="flex items-center space-x-2 mb-10 gap-2">
+    <div
+        id="contact"
+        className="flex items-center space-x-2 mb-10 gap-2 md:space-x-0 md:mb-0">
         <Icon className="text-xl" color={color} size={size} />{" "}
         <div>
             <h2 className="font-bold">{title}</h2>
@@ -41,15 +43,19 @@ const ContactItem: React.FC<ContactItemProps> = ({
 
 const Contact: React.FC = () => (
     <div>
-        <h1 className="text-2xl font-bold mb-6 text-blue-500">Contact</h1>
-        <div className="flex space-x-20 h-full items-start">
-            <ContactItem
-                Icon={FaMapMarkerAlt}
-                title="Location"
-                text="Caracas, Venezuela"
-                color="red"
-                size={24}
-            />
+        <h1 className="relative top-12 text-2xl font-bold mb-6 text-blue-500">
+            Contact
+        </h1>
+        <div className="flex flex-col space-y-8 py-4 md:flex-row md:space-y-0 md:space-x-20 h-full items-start">
+            <div className="relative top-10">
+                <ContactItem
+                    Icon={FaMapMarkerAlt}
+                    title="Location"
+                    text="Caracas, Venezuela"
+                    color="red"
+                    size={24}
+                />
+            </div>
             <ContactItem
                 Icon={FaEnvelope}
                 title="Mail"

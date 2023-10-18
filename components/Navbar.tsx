@@ -81,7 +81,7 @@ const Navbar: React.FC = () => {
             <div
                 className={`fixed top-0 right-0 transform  ${
                     isSidebarOpen ? "translate-x-0" : "translate-x-full"
-                } transition-transform duration-200 ease-in-out w-64 h-full dark:bg-gray-800 bg-white shadow-lg p-4 md:hidden`}>
+                } transition-transform duration-400 ease-in-out w-full h-full dark:bg-gray-800 bg-white shadow-lg p-4 md:hidden overflow-x-hidden`}>
                 <div className="flex justify-end">
                     <button
                         onClick={() => setSidebarOpen(false)}

@@ -10,19 +10,19 @@ interface ProjectsProps {
 
 const Projects: React.FC<ProjectsProps> = ({projects}) => {
     return (
-        <div id="projects" className="text-center mb-40">
+        <div id="projects" className="text-center mb-20">
             <div className="mx-auto w-80">
                 <h1 className="text-5xl text-blue-500 font-bold mb-10">
                     Projects
                 </h1>
             </div>
-            <div className="flex flex-wrap justify-center">
+            <div className="flex flex-col items-center md:flex-row md:justify-center md:flex-wrap">
                 {projects &&
                     projects.length > 0 &&
                     projects.map((project, index) => (
                         <div
                             key={index}
-                            className="flex flex-col items-center mb-8 gap-8 w-1/2">
+                            className="flex flex-col items-center mb-8 gap-8 w-full md:w-1/2">
                             <h2 className="text-2xl font-semibold mb-2">
                                 {project.title}
                             </h2>
