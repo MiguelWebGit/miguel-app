@@ -43,11 +43,11 @@ const ContactItem: React.FC<ContactItemProps> = ({
 
 const Contact: React.FC = () => (
     <div>
-        <h1 className="relative top-12 text-2xl font-bold mb-6 text-blue-500">
+        <h1 className="text-4xl md:text-2xl font-bold mb-6 text-blue-500 text-center md:text-left">
             Contact
         </h1>
         <div className="flex flex-col space-y-8 py-4 md:flex-row md:space-y-0 md:space-x-20 h-full items-start">
-            <div className="relative top-10">
+            <div className="relative top-10 md:static">
                 <ContactItem
                     Icon={FaMapMarkerAlt}
                     title="Location"
