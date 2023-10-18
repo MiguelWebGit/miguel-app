@@ -15,14 +15,14 @@ const Hero = () => {
     return (
         <div
             id="home"
-            className="flex justify-between items-center mb-40 mt-32 p-6">
-            <div>
+            className="flex flex-col md:flex-row justify-between items-center mb-40 mt-32 p-6">
+            <div className="text-center md:text-left">
                 <h1 className="text-4xl font-bold">Software Developer</h1>
-                <p className="mt-2 mb-5 mr-28">
+                <p className="mt-2 mb-5">
                     Hi I'm Miguel Guerrero. A passionate Software <br />
                     Developer based in Caracas, Venezuela.
                 </p>
-                <div className="flex space-x-2 mb-14">
+                <div className="flex justify-center md:justify-start space-x-2 mb-14">
                     <a
                         href="https://www.linkedin.com/in/miguel-guerrero-52987615a/"
                         target="_blank"
@@ -36,7 +36,7 @@ const Hero = () => {
                         <FaGithub size={24} />
                     </a>
                 </div>
-                <div className="flex space-x-2 mb-14">
+                <div className="flex justify-center md:justify-start space-x-2 mb-14">
                     <h2 className="text-lg font-semibold mr-4">Tech Stack</h2>
                     <p>|</p>
                     <div className="flex space-x-4">
@@ -65,7 +65,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div className="relative bottom-8 rounded-full overflow-hidden">
+            <div className="relative bottom-8 rounded-full overflow-hidden mt-10 md:mt-0">
                 <Image
                     src="/profile.jpg"
                     alt="profile picture"
