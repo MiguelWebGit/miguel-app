@@ -15,14 +15,14 @@ const Hero = () => {
     return (
         <div
             id="home"
-            className="flex flex-col md:flex-row justify-between items-center mb-40 mt-32 p-6">
-            <div className="text-center md:text-left">
+            className="flex flex-col md:flex-row justify-between items-center mb-28 mt-32 p-6">
+            <div className="text-left">
                 <h1 className="text-4xl font-bold">Software Developer</h1>
                 <p className="mt-2 mb-5">
                     Hi I'm Miguel Guerrero. A passionate Software <br />
                     Developer based in Caracas, Venezuela.
                 </p>
-                <div className="flex justify-center md:justify-start space-x-2 mb-14">
+                <div className="flex justify-start space-x-2 mb-10">
                     <a
                         href="https://www.linkedin.com/in/miguel-guerrero-52987615a/"
                         target="_blank"
@@ -36,10 +36,12 @@ const Hero = () => {
                         <FaGithub size={24} />
                     </a>
                 </div>
-                <div className="flex justify-center md:justify-start space-x-2 mb-14">
-                    <h2 className="text-lg font-semibold mr-4">Tech Stack</h2>
-                    <p>|</p>
-                    <div className="flex space-x-4">
+                <div className="flex flex-col md:flex-row justify-center md:justify-start space-x-2 mb-14">
+                    <h2 className="text-lg font-semibold mr-4  text-center md:text-left">
+                        Tech Stack
+                    </h2>
+                    <p className="hidden md:flex">|</p>
+                    <div className="flex justify-center space-x-4 mt-2 md:mt-0">
                         <FaHtml5 size={29} color="#e34c26" />
                         <FaCss3Alt size={29} color="#264de4" />
                         <FaJsSquare size={28} color="#f0db4f" />
@@ -65,7 +67,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div className="relative bottom-8 rounded-full overflow-hidden mt-10 md:mt-0">
+            <div className="hidden md:block relative bottom-8 rounded-full overflow-hidden mt-10 md:mt-0">
                 <Image
                     src="/profile.jpg"
                     alt="profile picture"
