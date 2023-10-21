@@ -23,7 +23,7 @@ const Hero = () => {
           Hi I'm Miguel Guerrero. A passionate Software Developer based in
           Caracas, Venezuela.
         </p>
-        <div className="flex justify-center md:justify-start space-x-2 mb-10">
+        <div className="md:static relative right-2 flex justify-center md:justify-start space-x-2 mb-6">
           <a
             className="hover:scale-125 transition duration-300 ease-in-out"
             href="https://www.linkedin.com/in/miguel-guerrero-52987615a/"
@@ -40,6 +40,8 @@ const Hero = () => {
           >
             <FaGithub size={24} />
           </a>
+        </div>
+        <div className="md:static relative right-2 mb-5">
           <a href="/MiguelCV.pdf" download>
             <button className="relative bottom-2 border-[0.1rem] dark:border-primary-dark border-primary-light p-1 rounded-md hover:border-secondary-light dark:hover:border-secondary-dark hover:scale-105 transition duration-300 ease-in-out">
               Download my CV
