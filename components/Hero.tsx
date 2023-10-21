@@ -40,6 +40,11 @@ const Hero = () => {
           >
             <FaGithub size={24} />
           </a>
+          <a href="/MiguelCV.pdf" download>
+            <button className="relative bottom-2 border-[0.1rem] dark:border-primary-dark border-primary-light p-1 rounded-md hover:border-secondary-light dark:hover:border-secondary-dark hover:scale-105 transition duration-300 ease-in-out">
+              Download my CV
+            </button>
+          </a>
         </div>
         <div className="flex flex-col md:flex-row justify-center md:justify-start space-x-2 mb-14">
           <h2 className="text-lg font-semibold mr-4  text-center md:text-left">
