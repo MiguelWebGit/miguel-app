@@ -16,7 +16,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
           Projects
         </h1>
         <p className="mb-8">
-          Every item is unique piece of development, created from scratch 🚀
+          Every item is a unique piece of development, created from scratch 🚀
         </p>
       </div>
       <div className="flex flex-col items-center md:flex-row md:justify-center md:flex-wrap">
