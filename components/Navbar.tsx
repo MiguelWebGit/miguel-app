@@ -18,6 +18,7 @@ const Navbar: React.FC = () => {
           navbarHeight,
         behavior: "smooth",
       });
+      setSidebarOpen(false);
     }
   };
 
@@ -87,6 +88,13 @@ const Navbar: React.FC = () => {
           <MenuIcon className="h-6 w-6 text-gray-500" />
         </button>
       </div>
+      {isSidebarOpen && (
+        <div
+          onClick={() => setSidebarOpen(false)}
+          className="fixed inset-0 z-40 bg-black opacity-50"
+          style={{ width: "calc(100% - 12rem)", right: "12rem" }} // Adjust these values as needed
+        />
+      )}
       <div
         className={`fixed top-0 right-0 transform  ${
           isSidebarOpen ? "translate-x-0" : "translate-x-full"
