@@ -6,9 +6,20 @@ const config: Config = {
         "./components/**/*.{js,ts,jsx,tsx,mdx}",
         "./app/**/*.{js,ts,jsx,tsx,mdx}",
     ],
-    darkMode: "class", // This enables dark mode.
+    darkMode: "class", 
     theme: {
         extend: {
+            colors: {
+                'primary-light': '#2874A6',
+                'secondary-light': '#5499C7',
+                'background-light': '#ECF0F1',
+                'text-light': '#17202A',
+                'primary-dark': '#5499C7',
+                'secondary-dark': '#5DADE2',
+                'background-dark': '#17202A',
+                'text-dark': '#ECF0F1',
+            },
+
             backgroundImage: {
                 "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
                 "gradient-conic":

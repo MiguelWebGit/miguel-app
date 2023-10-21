@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-html.dark {
-    @apply bg-gray-800 text-white;
+html {
+    @apply bg-background-light text-text-light
 }
+
+html.dark {
+    @apply bg-background-dark text-text-dark;
+}
+
